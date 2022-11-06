@@ -1,0 +1,180 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: rgb(199, 72, 93);  
+}  
+.container {  
+    padding: 50px;  
+  background-color: #AAAA44;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+
+.gender-format {
+  margin-left: 0px;
+}
+
+</style>  
+</head>  
+<body>  
+<form action="login_index.html">  
+  <div class="container">  
+  <center>  <h1> Üyelik Kayıt Formu</h1> </center>  
+  <hr>  
+<label> İsminiz </label>   
+<input type="text" name="firstname" placeholder= "İsminiz" size="15" required />   
+<label> Soyisminiz </label>    
+<input type="text" name="lastname" placeholder="Soyisminiz" size="15"required />   
+ <!--<div>  
+<label>   
+Course :  
+</label>   
+ 
+<select>  
+    
+    <option value="	ADANA	">	ADANA	</option>
+    <option value="	ADIYAMAN	">	ADIYAMAN	</option>
+    <option value="	AFYONKARAHİSAR	">	AFYONKARAHİSAR	</option>
+    <option value="	AĞRI	">	AĞRI	</option>
+    <option value="	AMASYA	">	AMASYA	</option>
+    <option value="	ANKARA	">	ANKARA	</option>
+    <option value="	ANTALYA	">	ANTALYA	</option>
+    <option value="	ARTVİN	">	ARTVİN	</option>
+    <option value="	AYDIN	">	AYDIN	</option>
+    <option value="	BALIKESİR	">	BALIKESİR	</option>
+    <option value="	BİLECİK	">	BİLECİK	</option>
+    <option value="	BİNGÖL	">	BİNGÖL	</option>
+    <option value="	BİTLİS	">	BİTLİS	</option>
+    <option value="	BOLU	">	BOLU	</option>
+    <option value="	BURDUR	">	BURDUR	</option>
+    <option value="	BURSA	">	BURSA	</option>
+    <option value="	ÇANAKKALE	">	ÇANAKKALE	</option>
+    <option value="	ÇANKIRI	">	ÇANKIRI	</option>
+    <option value="	ÇORUM	">	ÇORUM	</option>
+    <option value="	DENİZLİ	">	DENİZLİ	</option>
+    <option value="	DİYARBAKIR	">	DİYARBAKIR	</option>
+    <option value="	EDİRNE	">	EDİRNE	</option>
+    <option value="	ELAZIĞ	">	ELAZIĞ	</option>
+    <option value="	ERZİNCAN	">	ERZİNCAN	</option>
+    <option value="	ERZURUM	">	ERZURUM	</option>
+    <option value="	ESKİŞEHİR	">	ESKİŞEHİR	</option>
+    <option value="	GAZİANTEP	">	GAZİANTEP	</option>
+    <option value="	GİRESUN	">	GİRESUN	</option>
+    <option value="	GÜMÜŞHANE	">	GÜMÜŞHANE	</option>
+    <option value="	HAKKARİ	">	HAKKARİ	</option>
+    <option value="	HATAY	">	HATAY	</option>
+    <option value="	ISPARTA	">	ISPARTA	</option>
+    <option value="	MERSİN	">	MERSİN	</option>
+    <option value="	İSTANBUL	">	İSTANBUL	</option>
+    <option value="	İZMİR	">	İZMİR	</option>
+    <option value="	KARS	">	KARS	</option>
+    <option value="	KASTAMONU	">	KASTAMONU	</option>
+    <option value="	KAYSERİ	">	KAYSERİ	</option>
+    <option value="	KIRKLARELİ	">	KIRKLARELİ	</option>
+    <option value="	KIRŞEHİR	">	KIRŞEHİR	</option>
+    <option value="	KOCAELİ	">	KOCAELİ	</option>
+    <option value="	KONYA	">	KONYA	</option>
+    <option value="	KÜTAHYA	">	KÜTAHYA	</option>
+    <option value="	MALATYA	">	MALATYA	</option>
+    <option value="	MANİSA	">	MANİSA	</option>
+    <option value="	KAHRAMANMARAŞ	">	KAHRAMANMARAŞ	</option>
+    <option value="	MARDİN	">	MARDİN	</option>
+    <option value="	MUĞLA	">	MUĞLA	</option>
+    <option value="	MUŞ	">	MUŞ	</option>
+    <option value="	NEVŞEHİR	">	NEVŞEHİR	</option>
+    <option value="	NİĞDE	">	NİĞDE	</option>
+    <option value="	ORDU	">	ORDU	</option>
+    <option value="	RİZE	">	RİZE	</option>
+    <option value="	SAKARYA	">	SAKARYA	</option>
+    <option value="	SAMSUN	">	SAMSUN	</option>
+    <option value="	SİİRT	">	SİİRT	</option>
+    <option value="	SİNOP	">	SİNOP	</option>
+    <option value="	SİVAS	">	SİVAS	</option>
+    <option value="	TEKİRDAĞ	">	TEKİRDAĞ	</option>
+    <option value="	TOKAT	">	TOKAT	</option>
+    <option value="	TRABZON	">	TRABZON	</option>
+    <option value="	TUNCELİ	">	TUNCELİ	</option>
+    <option value="	ŞANLIURFA	">	ŞANLIURFA	</option>
+    <option value="	UŞAK	">	UŞAK	</option>
+    <option value="	VAN	">	VAN	</option>
+    <option value="	YOZGAT	">	YOZGAT	</option>
+    <option value="	ZONGULDAK	">	ZONGULDAK	</option>
+    <option value="	AKSARAY	">	AKSARAY	</option>
+    <option value="	BAYBURT	">	BAYBURT	</option>
+    <option value="	KARAMAN	">	KARAMAN	</option>
+    <option value="	KIRIKKALE	">	KIRIKKALE	</option>
+    <option value="	BATMAN	">	BATMAN	</option>
+    <option value="	ŞIRNAK	">	ŞIRNAK	</option>
+    <option value="	BARTIN	">	BARTIN	</option>
+    <option value="	ARDAHAN	">	ARDAHAN	</option>
+    <option value="	IĞDIR	">	IĞDIR	</option>
+    <option value="	YALOVA	">	YALOVA	</option>
+    <option value="	KARABÜK	">	KARABÜK	</option>
+    <option value="	KİLİS	">	KİLİS	</option>
+    <option value="	OSMANİYE	">	OSMANİYE	</option>
+    <option value="	DÜZCE	">	DÜZCE	</option>
+    
+</select>
+</div>    -->
+<div class="gender-format" >
+  <label>
+    Cinsiyetiniz :
+  </label><br>
+  <input type="radio" value="Erkek" name="gender" checked> Erkek
+  <input type="radio" value="Kadın" name="gender"> Kadın
+</div>
+<label>   
+Numaranız :  
+</label>  
+
+<input type="text" name="phone" placeholder="Telefon Numaranız" size="10"/ required>   
+
+ <label for="email"><b>Email Adresiniz</b></label>  
+ <input type="text" placeholder="Email Adresiniz" name="email" required>  
+  
+    <label for="psw"><b>Şifreniz</b></label>  
+    <input type="password" placeholder="Enter Password" name="psw" required>  
+  
+    <label for="psw-repeat"><b>Şifrenizi tekrar giriniz</b></label>  
+    <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
+
+    <!-- login_index. html sayfasına gidilecek -->
+    <button type="submit" class="registerbtn" >Üye Ol</button>    
+</form>  
+</body>  
+</html>  
