@@ -1,7 +1,7 @@
-[22,27,16,2,18,6] dizisi için insertion sort algoritmasının adımları şu şekildedir:
+[22,27,16,2,18,6] dizisi için insertion sort algoritmasının adımları:
 
 [22, 27, 16, 2, 18, 6]
-[22, 27, 16, 2, 18, 6] -> [22, 27], [16, 2, 18, 6]
+[22, 27, 16, 2, 18, 6]
 [16, 22, 27, 2, 18, 6]
 [2, 16, 22, 27, 18, 6]
 [2, 16, 18, 22, 27, 6]
@@ -15,11 +15,12 @@
 [2, 3, 4, 8, 7, 9, 5, 15, 6]
 [2, 3, 4, 5, 7, 9, 8, 15, 6]
 [2, 3, 4, 5, 6, 9, 8, 15, 7]
-Not: Her adımda, listenin sıralanmamış bölümünden minimum eleman seçilerek sıralanmış bölümün sonuna eklenir. Yukarıdaki adımlarda, sıralanmamış bölümden minimum eleman seçilerek sıralanmış bölümün sonuna eklenmiştir.
+
+Not: Her adımda, listenin sıralanmamış bölümünden minimum eleman seçilerek sıralanmış bölümün sonuna eklenir. Sıralanmamış bölümden minimum eleman seçilerek sıralanmış bölümün sonuna eklenmiştir.
 
 
 
-[16, 21, 11, 8, 12, 22] dizisi için Merge Sort algoritmasının adımları şu şekildedir:
+[16, 21, 11, 8, 12, 22] dizisi için Merge Sort:
 
 [16, 21, 11, 8, 12, 22] -> [16, 21, 11], [8, 12, 22]
 [16, 21, 11] -> [16], [21, 11]
@@ -29,3 +30,26 @@ Not: Her adımda, listenin sıralanmamış bölümünden minimum eleman seçiler
 [8], [12, 22] -> [8, 12, 22]
 [11, 16, 21], [8, 12, 22] -> [8, 11, 12, 16, 21, 22]
 Not: Merge Sort, verilen diziyi ikiye bölerek ayrıştırır ve daha sonra iki alt diziyi birleştirerek sıralar. Bu işlem sıralanana kadar tekrar edilir. Yukarıdaki adımlarda, verilen dizinin önce ikiye bölündüğü, daha sonra alt dizilerin sıralandığı ve son olarak alt dizilerin birleştirilerek tamamlanan sıralı dizi oluşturulduğu görülmektedir.
+
+
+
+
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisi için Binary-Search-Tree oluşturma adımları şu şekildedir:
+
+Kök düğüm olarak 7'yi seçiyoruz. -> root=7
+5, 1, 8, 3, 6, 0, 9, 4, 2 sırasıyla ağaca ekleniyor. Her yeni düğüm eklenirken, kök düğümden başlayarak karşılaştırma yapılarak ağaçta uygun konuma yerleştiriliyor.
+5 düğümü root'un soluna eklenir. -> root.left=5
+1 düğümü root'un soluna eklenir. -> root.left.left=1
+8 düğümü root'un sağına eklenir. -> root.right=8
+3 düğümü 5'in sağına eklenir. -> root.left.right=3
+6 düğümü 5'in sağına eklenir. -> root.left.right=6
+0 düğümü 1'in soluna eklenir. -> root.left.left.left=0
+9 düğümü 8'in sağına eklenir. -> root.right.right=9
+4 düğümü 3'ün sağına eklenir. -> root.left.right.left=4
+2 düğümü 1'in sağına eklenir. -> root.left.left.right=2
+
+    7
+   / \
+  5   8
+ / \   \
+1   3   9
